@@ -1,0 +1,107 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lessons</title>
+    <link rel="stylesheet" href="lessons.css" />
+    
+  </head>
+  <body>
+      <nav>
+      <div class="logo">
+        <img class="image" src="./images/logo.png" alt="" />
+        <h4>EPHDEL</h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+        </li>
+        <li>
+          <a href="#">PROJECTS</a>
+        </li>
+        <li>
+          <a href="assignment.html">ASSIGNMENTS</a>
+        </li>
+        <li>
+          <a href="lessons.html">LESSONS</a>
+        </li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div class="page">
+      <div class="heading">
+        <h2>&#128218WHAT I LEARNT &#128187</h2>
+        <p>
+          GTL DIGITAL SKILLS TRAINING PROGRAM AT HO NODE HUB
+        </p>
+      </div>
+      <button class="date">
+        <h2>DAY 1</h2>
+        
+      </button>
+      <div class="note">
+        <p>
+         Orientation of program and setting up of environment
+        </p>
+      </div>
+
+      <button class="date">
+        <h2>DAY 2</h2>
+       
+      </button>
+      <div class="note">
+        <p>
+          * Learnt how to install Git bash and link it in Visual Studio Code 
+          <br>
+          * Learnt how to push to github using the git terminal in Visual Studio Code 
+          <br>
+          *Learnt how to share our codes in Discord
+        </p>
+      </div>
+
+      <button class="date">
+        <h2>DAY 3</h2>
+        
+      </button>
+      <div class="note">
+        <p>
+         *Learnt CSS3-How to link CSS in HTML, 
+         <br>
+         Background-color, Background-image
+         <br>
+         *Learnt how to create a navbar and its links
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("date");
+      var i;
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } 
+          else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>
