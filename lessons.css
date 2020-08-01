@@ -21,13 +21,13 @@ p{
 .date {
   background-color: rgb(103, 250, 255);
   color: white;
-  width: 100%;
+  width: 80%;
+  margin-left: 12%;
   padding: 10px;
-  border-radius: 7px;
-  margin: auto;
+  border-radius: 9px;
+  border: 0px;
   margin-top: 20px;
   font-size: larger;
-  border: 5px dotted;
   transition: 0.4s;
   display: inline-block;
 }
@@ -60,12 +60,6 @@ p{
     content: "\1F446";
 }
 
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
 
 nav {
   display: flex;
